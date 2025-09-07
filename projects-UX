@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="keywords" content="HTML Template">
+        <meta name="description" content="Student Name - Student ID | HTML Template">
+        <meta name="author" content="Student Name">
+
+        <title>Nicole Hill | UX</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar">
+                        <a class="navbar-brand" href="index.html">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-target="#navigation">
+                            <span class="fa-solid fa-bars"></span>
+                        </button>
+
+                        <div class="navigation collapse" id="navigation">
+                            <ul class="navbar-nav">
+                                <li>
+                                    <a href="index.html">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li>
+                                    <a href="about-me.html">About </a>
+                                </li>
+                                <li class="active">
+                                    <a href="projects.html">Projects</a>
+                                </li>
+                                <li class="icon">
+                                    <a href="mailto:nicole.hill@uta.edu">
+                                            <span class="fa-regular fa-envelope fa-xl nav"></span>
+                                    </a>
+                                </li>
+                                <li class="icon">
+                                    <a href="https://www.linkedin.com/in/nicole-hill-40328b240">
+                                        <span class="fa-brands fa-linkedin fa-xl nav"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="Skills">
+                <div class="skills row">
+                    <div class="col-xs-4 col-md-4 col-lg-4 nav">
+                        <div class="active">
+                            <a href="projects.html"><h3>Web Design</h3></a>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-4 col-lg-4 nav">
+                        <a href="projects-UX.html"><h3>User Experience</h3></a>
+                    </div>
+                    <div class="col-xs-4 col-md-4 col-lg-4 nav">
+                        <a href="projects-Graphics.html"><h3>Graphic Design</h3></a>
+                    </div>
+                </div>
+            </div>
+            <div class="Web-Designs">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>Enhancing the Experience </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="text">
+                            <h1> SafeWays Driving Campaign </h1>
+                            <div class="describe">
+                                <p>For the website redesign, we streamlined the overall layout to make the user experience simpler and more visually appealing, focusing on clear navigation and modern design aesthetics. Additionally, we integrated innovative marketing strategies, enhancing the site's engagement with fresh, creative ideas to drive traffic and improve conversion rates.</p>
+                            </div>
+                            <a href="bethany.html" class="btn btn-secondary">Look into the Details</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="image">
+                            <img src="images/bethany3.png" alt="Bethany's Home Page">
+                        </div>
+                    </div>
+                </div>
+                <div class="reverse row">
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="text">
+                            <h1> Boujee Smoothie </h1>
+                            <div class="describe">
+                                <p>Vibrant, user-friendly website designed to offer a premium selection of smoothie recipes, blending health with luxury. The site features an interactive menu, allowing users to explore unique flavor combinations and nutritional benefits tailored to their tastes.</p>
+                            </div>
+                            <a href="boujee.html" class="btn btn-secondary">Look into the Details</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="image">
+                            <img src="images/Boujee.png" alt="Throwing newspaper">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="text">
+                            <h1> Every Good Work </h1>
+                            <div class="describe">
+                                <p>For the Every Good Work website redesign, we focused on simplifying the user interface to create a more intuitive and visually appealing experience. We also integrated new marketing strategies to enhance engagement, driving awareness for the organization’s mission and expanding its reach.</p>
+                            </div>
+                            <a href="#" class="btn btn-secondary">Look into the Details</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-xs-12">
+                        <div class="image bottom">
+                            <img src="images/EGW home.png" alt="Every Good Work Home Page">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="company-details">
+            <div class="footer row">
+                <div class="col-xs-12">
+                    <ul class="navbar-nav footer">
+                        <li>
+                            <a href="index.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li>
+                            <a href="about-me.html">About </a>
+                        </li>
+                        <li>
+                            <a href="projects.html">Projects</a>
+                        </li>
+                        <li class="icon">
+                            <a href="mailto:nicole.hill@uta.edu">
+                                    <span class="fa-regular fa-envelope fa-xl nav"></span>
+                            </a>
+                        </li>
+                        <li class="icon">
+                            <a href="https://www.linkedin.com/in/nicole-hill-40328b240">
+                                <span class="fa-brands fa-linkedin fa-xl nav"></span>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <div class="copyright">
+                <div class="footer row">
+                    <div class="footer col-md-8">
+                        <p>&copy; 2024 Mockup. All Rights Reserved. Nicole Hill| 1001909839</p>
+                    </div>
+                </div>
+        </div>
+    </footer>
+
+
+
+        
+    <div id="windowSize"></div>
+
+    <script src="javascript/app.js"></script>
+</body>
+</html>
