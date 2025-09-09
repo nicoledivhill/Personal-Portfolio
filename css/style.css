@@ -121,18 +121,32 @@ h1, h2, h3, h4, h5, h6,p {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    padding:0rem 0rem 0rem 0rem; 
-    margin: 0rem 0rem 5rem 0rem;
+    padding:8rem; 
+    margin: 2rem 0rem 0rem 0rem;
     }
 
 .home h1 {
     color:var(--primary);
+    font-weight: 400;
     font-size:3.25rem;
     text-align: center;
+    margin:2rem 0rem 0rem 2rem;
+    margin-bottom:0;
 }
 
 .home p{
     color:var(--primary);
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px){
+    .home{
+        padding:1rem 3rem;
+    }
+    .home h1{
+        font-size:2.25rem;
+        margin:1rem 0rem 0rem 0rem;
+    }
 }
 
 .header-image {
@@ -1170,7 +1184,7 @@ span.fa-regular nav{
 /* End of Branding */
 /* Navigation Styles */
 .nav-spaced{
-    padding:1rem;;
+    padding:0rem 1rem;
 }
 .navbar {
     display: flex;
