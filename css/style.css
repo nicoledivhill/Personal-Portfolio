@@ -4,7 +4,7 @@
     Updated on: Today's Date
     Project: Flexbox
 */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
@@ -68,6 +68,11 @@ html{
     scroll-behavior: smooth;
 }
 
+h1, h2, h3, h4, h5, h6,p {
+    margin-top: .25rem;
+    margin-bottom: calc(0.5 * var(--base-line-height));
+}
+
 
 .description{
     padding-bottom: 3em;;
@@ -84,23 +89,50 @@ html{
 
 /* New*/
 
-.home{
-    background-image:url(../images/background.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding:15rem 8rem;
-    margin-bottom:5rem;
+.special{
+    margin-top:2rem;
 }
 
+.hidden.experience{
+    margin-top:2rem;
+}
+.hidden {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.background.attempt{
+    background-image: url(../images/background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:0rem 0rem 0rem 0rem;
+    margin:0rem 0rem 0rem 0rem;
+}
+
+
+.home{ 
+    background-image: url(../images/background.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding:0rem 0rem 0rem 0rem; 
+    margin: 0rem 0rem 5rem 0rem;
+    }
+
 .home h1 {
-    color:var(--white);
+    color:var(--primary);
     font-size:3.25rem;
     text-align: center;
 }
 
 .home p{
-    color:var(--white);
+    color:var(--primary);
 }
 
 .header-image {
@@ -124,11 +156,14 @@ html{
 
 .row.text{
     justify-content: center;
-    padding-top:1rem;
     margin-bottom:0;
 }
 .row.text h1, .row.text h4,.row.text a {
     margin:.5rem 0rem;
+ }
+
+h4{
+    margin:10px 0px;
  }
 
 .Smoothie, .Volunteer{
@@ -277,6 +312,8 @@ html{
 }
 .nav a h3:hover{
     color:hsl(201, 45%, 50%);
+    transition: transform .5s ease;
+    transform: scale(1.1);
 }
 .active h3{
     font-weight:bold;
@@ -424,10 +461,10 @@ p.center{
 h1, h2, h3, h4, h5, h6 
 .h1, .h2, .h3, .h4, .h5, .h6{
     font-family: 'Urbanist', 'Manrope', 'open sans', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     line-height: var(--base-line-height);
     color:var(--primary);
-    letter-spacing:2px;
+    letter-spacing:1px;
 }
 
 h1, .h1{
@@ -623,7 +660,7 @@ embed{
 .container {
     margin-left:auto;
     margin-right:auto;
-    padding:3rem .5rem 0rem .5rem;
+    padding:0rem .5rem 0rem .5rem;
     width:100%;
 }
 
@@ -635,6 +672,7 @@ embed{
     align-content:flex-start;
     margin-left:-1rem;
     margin-right: -1rem;
+    padding:0rem 4rem;
 }
 
 [class^="col-"] {
@@ -1062,6 +1100,8 @@ embed{
 
 .btn:hover{
     background-color: var(--gray-3);
+    transition: transform .5s ease;
+    transform: scale(1.1);
 }
 
 .btn.btn-primary{
@@ -1070,6 +1110,8 @@ embed{
 }
 .btn.btn-primary:hover{
     background-color: var(--primary-hover);
+    transition: transform .5s ease;
+    transform: scale(1.1);
 }
 
 .btn.btn-secondary{
@@ -1077,6 +1119,8 @@ embed{
 }
 .btn.btn-secondary:hover{
     background-color: var(--secondary-hover);
+    transition: transform .5s ease;
+    transform: scale(1.1);
 }
 
 
@@ -1085,6 +1129,8 @@ embed{
 }
 .btn.btn-tertiary:hover{
     background-color: var(--tertiary-hover);
+    transition: transform .5s ease;
+    transform: scale(1.1);
 }
 
 .btn.btn-sm{
@@ -1103,6 +1149,12 @@ embed{
 
 }
 
+.contactlinks a:hover{
+    color:var(--primary);
+    transition: transform .5s ease;
+    transform: scale(1.1);
+}
+
 
 span.fa-brands,
 span.fa-regular{
@@ -1117,22 +1169,33 @@ span.fa-regular nav{
 
 /* End of Branding */
 /* Navigation Styles */
+.nav-spaced{
+    padding:1rem;;
+}
 .navbar {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     justify-content: space-between;
     align-items:center;
-    align-content: flex-start;
+    align-content: center;
+    padding:0rem 2rem 1rem 2rem;
 }
 
 .navbar-brand {
     display: block;
     overflow: hidden;
     text-indent:-1000000px;
-    width:5rem;
-    height:6rem;
     text-decoration: none;
-    background:url('../images/NH\ logo.svg') no-repeat center/contain transparent;
+    width: 8rem;
+    height: 8rem;
+    background: url('../images/NH logo.svg') no-repeat center transparent;
+    background-size: 100% 100%; /* stretch image to fill container */
+    transition:transform .5s ease;
+}
+
+.navbar-brand:hover {
+    transform: scale(1.2); 
+
 }
 
 .navbar-toggler {
@@ -1180,17 +1243,20 @@ span.fa-regular nav{
 }
 
 .navbar-nav li.active > a {
+    display:block;   /* shrink to text width */
     border-bottom: 2px solid var(--primary-hover);
-    padding-top: 5px;
-    padding-bottom: 5px;
+    width: fit-content;
 }
 
 .navbar-nav li > a:hover {
     color:var(--primary-hover);
+    transition: transform .5s ease;
+    transform: scale(1.1);
 }
 .navbar-nav li.icon > a:hover {
-    background-color: white;
     color:var(--primary-hover);
+    transition: transform .5s ease;
+    transform: scale(1.2);
 }
 
 
@@ -1227,13 +1293,45 @@ span.fa-regular nav{
     display:none;
 }
 
+/* Mobile Styles */
+
+@media screen and (max-width: 767px) {
+
+  .navbar-nav {
+        display: flex;
+        flex-flow: row wrap; 
+        justify-content: flex-end;
+        align-items: baseline;
+        align-content:center; 
+  }
+
+  .nav-spaced{
+    padding:1rem 0rem;
+  }
+
+  /* Keep icons horizontal */
+  .navbar-nav.icons-horizontal {
+    display: flex;
+    flex-direction: row; 
+    align-content: center;
+    justify-content: center;/* horizontal layout */
+    gap: 0.5rem; /* spacing between icons */
+    margin-top: 1rem; /* optional spacing from nav links */
+    margin-left:.75rem;
+  }
+}
+
 @media screen and (min-width:768px){
     .navbar-toggler{
         display:none;
     }
 
     .navigation {
-        flex: 0 0 auto;
+        display: flex;  
+        flex: 0 0 auto;          /* make the container flex */
+        justify-content: flex-end; /* align nav links + icons to the right */
+        align-items: center;       /* vertical alignment */
+        gap: .5rem;                 /* spacing between text links and icons */
     }
 
     .navigation.collapse .navbar-nav, 
@@ -1244,10 +1342,11 @@ span.fa-regular nav{
         align-items: baseline;
         align-content:center; 
     }
-
-
-
+    .icon{
+        padding:0rem 5px;
+    }
 }
+
 /* End of Nav */
 /* Forms */
 
