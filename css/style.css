@@ -141,7 +141,8 @@ h1, h2, h3, h4, h5, h6,p {
 
 @media screen and (max-width: 768px){
     .home{
-        padding:1rem 3rem;
+        padding:2rem 2rem;
+        background-image:cover;
     }
     .home h1{
         font-size:2.25rem;
@@ -314,6 +315,17 @@ h4{
     object-position: center;
     border: none;
 }
+
+@media screen and (max-width: 768px){
+    .image{
+        aspect-ratio: 5/3;
+        width:75%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+}
+
 .Experience{
     padding: 3rem 2rem;
 }
@@ -1211,6 +1223,8 @@ span.fa-regular nav{
 .nav-spaced{
     padding:0rem 1rem;
 }
+
+
 .navbar {
     display: flex;
     flex-flow: column;
@@ -1342,10 +1356,10 @@ span.fa-regular nav{
         justify-content: flex-end;
         align-items: baseline;
         align-content:center; 
+        margin-top:0rem;
   }
 
   .nav-spaced{
-    padding:1rem 0rem;
   }
 
   /* Keep icons horizontal */
@@ -1358,6 +1372,9 @@ span.fa-regular nav{
     margin-top: 1rem; /* optional spacing from nav links */
     margin-left:.75rem;
   }
+  .row{
+        padding:0rem;
+    }
 }
 
 @media screen and (min-width:768px){
